@@ -1,38 +1,41 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">\
-    <title>메일 작성 폼</title></head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FLOYD</title>
+    <link rel="stylesheet" type="text/css" href="../css/styles.css">
+</head>
 <body>
-<form action="./mail.jsp" method="post">
-    <table border="1" cellpadding="0" cellspacing="0">
-        <tr>
-            <td>SMTP서버</td>
-            <td><input type="text" name="smtpServer" size="20"></td>
-        </tr>
-        <tr>
-            <td>STMP 서버 계정</td>
-            <td><input type="text" name="serverAccount" size="10"></td>
-        </tr>
-        <tr>
-            <td>보내는 이메일</td>
-            <td><input type="text" name="senderEmail" size="30"></td>
-        </tr>
-        <tr>
-            <td>받는 이메일</td>
-            <td><input type="text" name="receiverEmail" size="30"></td>
-        </tr>
-        <tr>
-            <td>제목</td>
-            <td><input type="text" name="subject" size="50"></td>
-        </tr>
-        <tr>
-            <td>내용</td>
-            <td><textarea name="content" rows="8" cols="50"></textarea></td>
-        </tr>
-        <tr>
-            <td colspan="2"><input type="submit" value="전송"></td>
-        </tr>
-    </table>
-</form>
-</body></html>
+<header>
+    <h1>FLOYD</h1>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Mail</a></li>
+            <!-- 다른 메뉴 추가 가능 -->
+        </ul>
+    </nav>
+</header>
+
+<section id="main-content">
+    <!-- 메일 보내기 폼 등의 내용을 추가 -->
+    <form action="./emailSend.jsp" method="post">
+        <label for="to">수신자 이메일:</label>
+        <input type="email" name="to" id="to" required>
+        <br>
+        <label for="subject">이메일 제목:</label>
+        <input type="text" name="subject" id="subject" required>
+        <br>
+        <label for="message">이메일 내용:</label>
+        <textarea name="message" id="message" cols="30" rows="5" required></textarea>
+        <br>
+        <button type="submit">Send Mail</button>
+    </form>
+</section>
+
+<footer>
+    <!-- 페이지 푸터 내용 추가 -->
+</footer>
+</body>
+</html>

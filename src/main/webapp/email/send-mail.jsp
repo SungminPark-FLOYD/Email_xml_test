@@ -12,9 +12,9 @@
     String messageText = request.getParameter("message");
 
     // 발신자 이메일 주소 및 인증 정보
-    String from = "psm-5941@naver.com"; // 네이버 이메일 주소
-    String username = "psm-5941"; // 네이버 아이디
-    String password = "tjdals98**"; // 네이버 비밀번호
+    String from = ""; // 네이버 이메일 주소
+    String username = ""; // 네이버 아이디
+    String password = ""; // 네이버 비밀번호
 
     // 네이버 SMTP 서버 설정
     String host = "smtp.naver.com";

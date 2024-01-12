@@ -21,7 +21,7 @@
 
 <section id="main-content">
     <!-- 메일 보내기 폼 등의 내용을 추가 -->
-    <form action="email/send-mail.jsp" method="post">
+    <form action="./email/send-mail.jsp" method="post">
         <label for="to">수신자 이메일:</label>
         <input type="email" name="to" id="to" required>
         <br>
